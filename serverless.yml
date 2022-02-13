@@ -21,13 +21,13 @@ provider:
   name: aws
   runtime: python3.9
   region: us-east-1
-  profile: serverless-admin
+  profile: user-name
   memorySize: 128
   iamRoleStatements:
    - Effect: "Allow"
      Action:
        - "ec2:*"
-     Resource: "arn:aws:iam::950478442618:user/serverless-admin"
+     Resource: "arn:aws:iam::00000000000:user/user-name"
 
 functions:
   start-ec2:
